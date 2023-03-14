@@ -1391,7 +1391,7 @@ input::-moz-focus-inner {
  */
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     min-height: 66px;
     z-index: 600;
@@ -1761,6 +1761,12 @@ header .logo {
     right: 0;
     bottom: -0;
     opacity: 0.3;
+}
+.footer {
+    position: relative;
+    height: 200px;
+    text-align: center;
+    background: #151515 url(../images/footer.jpg) no-repeat center bottom;
 }
 
 .intro-social {
@@ -3463,13 +3469,33 @@ footer .copyright span:last-child::after {
     box-shadow: 0 6px 24px rgb(0 0 0 / 20%);
     border-radius: 50%;
     padding: 25px;
-    margin: 15px;
+    margin: 15px 15px 40px;
+}
+.skill-item .java-svg{
+    width: 100px;
+    height: 90px;
+}
+.skill-item .skill-label {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 600;
 }
 
 @media only screen and (max-width:600px) {
+    .skill-parent{
+        margin: 0;
+    }
     .skill-item {
         width: 125px;
         height: 125px;
+        margin: 10px 10px 35px;
+    }
+    .skill-item .skill-label{
+        font-size: 15px;
+    }
+    .skill-item .java-svg {
+        width: 90px;
+        height: 80px;
     }
 }
 
