@@ -206,6 +206,9 @@ p.lead {
     line-height: 1.8;
     color: #585858;
 }
+p.lead b {
+    font-size: 2rem;
+}
 
 @media only screen and (max-width:768px) {
     p.lead {
@@ -341,7 +344,7 @@ mark {
 
 hr {
     border: solid #d2d2d2;
-    border-width: 1px 0 0;
+    border-width: 2px 0 0;
     clear: both;
     margin: 1.5rem 0 1.5rem;
     height: 0;
@@ -2269,12 +2272,20 @@ header .logo {
     letter-spacing: 1px;
 }
 
-.timeline .timeline-heading>span {
+.timeline .timeline-heading>  div > span, .timeline .timeline-heading > span {
     font-family: "poppins-regular", sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+}
+
+.promotion::after {
+    content: "";
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    border: 0.5px solid #cc015f21;
 }
 
 .timeline>li>.timeline-panel:after {
