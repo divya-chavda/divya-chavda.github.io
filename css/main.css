@@ -2169,7 +2169,10 @@ header .logo {
     left: 0;
     bottom: 0;
 }
-
+mark.highlighting {
+    color: black;
+    font-weight: bolder;
+}
 
 /* Timeline Css */
 
