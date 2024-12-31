@@ -18,7 +18,7 @@
       font-size: 14px;
       border-radius: 20px;
       font-weight: 300;
-      height: 320px;
+      height: 330px;
       cursor: pointer;
       box-shadow: rgb(182 182 182 / 35%) 0px 5px 15px;
       border: 1px solid #000;
@@ -40,7 +40,7 @@
           justify-content: space-between;
           color: #fff;
           .inner-details {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 100;
             line-height: 30px;
             letter-spacing: 1.8px;
@@ -50,12 +50,12 @@
 
       .title {
         margin-bottom: 0.9rem;
-        font-size: 26px;
+        font-size: 28px;
         font-weight: 300;
         line-height: 120%;
       }
       .responsiblity {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
     .journey-item.item-0 {
@@ -72,7 +72,7 @@
       top: 270px;
     }
     .journey-item.item-1.active {
-      top: 480px;
+      top: 495px;
     }
     .journey-item.item-2 {
       background: #1f1f1f;
@@ -80,7 +80,7 @@
       top: 180px;
     }
     .journey-item.item-2.active {
-      top: 400px;
+      top: 405px;
     }
     .journey-item.item-3 {
       background: #1f1f1f;
