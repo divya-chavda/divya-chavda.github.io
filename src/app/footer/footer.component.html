@@ -1,0 +1,13 @@
+<footer class="footer-container">
+  <p>Let’s <br />Connect.</p>
+
+  <ul class="intro-social">
+    <li *ngFor="let item of socialLinks">
+      <a [href]="item.link" target="_blank">
+        <i [class]="item.logo" *ngIf="!item.isSvg"></i>
+        <app-icon-svg [iconName]="item.logo" *ngIf="item.isSvg"></app-icon-svg>
+      </a>
+    </li>
+  </ul>
+  <p class="copyright">@DivyaChavda_2025</p>
+</footer>

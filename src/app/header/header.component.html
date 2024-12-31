@@ -1,0 +1,72 @@
+<section class="intro">
+
+  <!-- <div class="intro-overlay"></div> -->
+  <header>
+    <div class="section-menu">
+      <div class="logo-bar">
+        <a class="logo" href="index.html"> </a>
+      </div>
+      <a class="link" href="https://www.linkedin.com/in/divya-chavda-2b1616120/" target="_blank" *ngIf="!isMobile">
+        Divya Chavda&nbsp;
+        <app-icon-svg [iconName]="'link_arrow'"></app-icon-svg>
+      </a>
+      <div class="menu" *ngIf="isMobile" (click)="onChangeMenu()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="open-menu" *ngIf="isMobile && isMenuOpen">
+      <ng-container [ngTemplateOutlet]="mobileMenu"></ng-container>
+    </div>
+  </header>
+
+  <div class="intro-container">
+    <div class="intro-content">
+      <div class="col-twelve baner-text">
+        <h2 class="title">Hi, I’m Divya,</h2> <br />
+        <h3 class="sub-title">A Full stack Developer</h3>
+        <p class="text-style">
+          A full stack developer transforming complex challenges into scalable software solutions, empowering businesses
+          to innovate, grow, and succeed.
+        </p>
+
+      </div>
+
+
+      <ng-container [ngTemplateOutlet]="socialTemplate" *ngIf="!isMobile">
+      </ng-container>
+    </div>
+    <div class="text-style1">
+      Currently working as a Senior software developer in Citi Bank at Pune, Maharashtra
+    </div>
+    <ng-container [ngTemplateOutlet]="socialTemplate" *ngIf="isMobile"></ng-container>
+    <div class="banner-image">
+      <img src="/assets/banner.png" />
+    </div>
+  </div>
+
+</section>
+<ng-template #mobileMenu>
+  <h3 class="title">Interested in working together?</h3>
+  <ng-container [ngTemplateOutlet]="socialTemplate"></ng-container>
+  <div class="lets-connect">
+    Let’s Connect
+  </div>
+  <div class="lets-connect">
+    <a [href]="'mailto:'+emailId">
+      {{emailId}}
+    </a>
+  </div>
+</ng-template>
+
+<ng-template #socialTemplate>
+
+  <ul class="intro-social">
+    <li *ngFor="let item of socialLinks">
+      <a [href]="item.link" target="_blank">
+        <i [class]="item.logo" *ngIf="!item.isSvg"></i>
+        <app-icon-svg [iconName]="item.logo" *ngIf="item.isSvg"></app-icon-svg>
+      </a>
+    </li>
+  </ul>
+</ng-template>

@@ -1,0 +1,296 @@
+.skills-tab {
+  padding: 30px 100px;
+  margin: 10px 0;
+  background: #fff;
+  .section-title {
+    color: #000;
+  }
+  .skill-info {
+    margin: 30px 0 50px 0;
+    width: 25%;
+    h3 {
+      font-size: 24px;
+      color: #000;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 200;
+      color: #000;
+    }
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills {
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 0, 1) 27%,
+      rgba(0, 143, 245, 1) 73%
+    );
+    width: 72%;
+    padding: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 68%);
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: all;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .top-container,
+    .middle-container,
+    .bottom-container,
+    .second-top-container {
+      .skill-item {
+        cursor: pointer;
+      }
+    }
+
+    .top-container {
+      position: absolute;
+      bottom: 265px;
+      div#top-0 {
+        margin-left: 140px;
+        transform: rotate(27deg);
+      }
+    }
+
+    .second-top-container {
+      display: flex;
+      bottom: 188px;
+      position: absolute;
+
+      div#secondTop-0 {
+        margin-left: 105px;
+        transform: translateY(14px) rotate(-14.048deg);
+      }
+      div#secondTop-1 {
+        transform: translateX(6px) translateY(-2px) rotate(19.952deg);
+      }
+      div#secondTop-2 {
+        margin-left: 204px;
+        transform: translateY(12px) rotate(-45deg);
+      }
+    }
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      border-radius: 12px;
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+
+      .icon svg {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      div#bottom-7 {
+        margin-left: 23px;
+      }
+      div#bottom-4 {
+        margin-left: 50px;
+      }
+    }
+
+    .middle-container {
+      display: flex;
+      bottom: 90px;
+      position: absolute;
+      .icon:nth-child(1) {
+        transform: rotate(17.687deg);
+        margin-left: 60px;
+      }
+
+      .icon:nth-child(2) {
+        transform: translateX(7px) rotate(-21.811deg);
+      }
+
+      .icon:nth-child(3) {
+        transform: translateX(10px) translateY(-11px) rotate(38.189deg);
+      }
+      .icon:nth-child(4) {
+        transform: translateY(5px);
+        margin-left: 120px;
+      }
+      .icon:nth-child(5) {
+        transform: translateY(5px);
+      }
+
+      .icon:nth-child(6) {
+        transform: translateX(127px) translateY(2px) rotate(-17deg);
+        :hover,
+        :focus {
+          transform: translateX(120px) translateY(-9px) rotate(-17deg)
+            scale(1.5);
+        }
+      }
+    }
+    .animated-element:hover,
+    .animated-element:focus {
+      scale: 1.2 !important;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .skills-tab {
+    .skills {
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      .middle-container {
+        bottom: 100px;
+        .icon:nth-child(1) {
+          transform: rotate(17.687deg) translate(-20px, 53px);
+          margin-left: 90px;
+        }
+        .icon:nth-child(2) {
+          transform: translate(-38px, 45px) rotate(-21.811deg);
+        }
+        .icon:nth-child(3) {
+          transform: translate(-34px, 40px) rotate(38.189deg);
+        }
+        .icon:nth-child(4) {
+          transform: translateY(47px);
+          margin-left: 50px;
+        }
+        .icon:nth-child(5) {
+          transform: translate(-3px, 47px);
+        }
+
+        .icon:nth-child(6) {
+          transform: translate(74px, 45px) rotate(-45deg);
+        }
+      }
+      .second-top-container {
+        bottom: 160px;
+        div#secondTop-0 {
+          margin-left: 80px;
+          transform: translateY(51px) rotate(-21.048deg);
+        }
+        div#secondTop-1 {
+          transform: translate(1px, 49px) rotate(10.952deg);
+        }
+        div#secondTop-2 {
+          margin-left: 135px;
+          transform: translate(8px, 51px) rotate(-45deg);
+        }
+      }
+      .top-container {
+        bottom: 240px;
+        div#top-0 {
+          margin-left: 105px;
+          transform: translateY(75px) rotate(34deg);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .skills-tab {
+    .skills {
+      .icon {
+        width: 70px;
+        height: 70px;
+      }
+
+      .middle-container {
+        bottom: 80px;
+        .icon:nth-child(1) {
+          margin-left: 40px;
+        }
+        // .icon:nth-child(2) {
+        //   transform: translateY(4px) rotate(-21.811deg);
+        // }
+        // .icon:nth-child(3) {
+        //   transform: translate(-3px, -6px) rotate(38.189deg);
+        // }
+        // .icon:nth-child(4) {
+        //   transform: translateY(5px);
+        //   margin-left: 145px;
+        // }
+        // .icon:nth-child(5) {
+        //   transform: translate(-5px, 5px);
+        // }
+
+        // .icon:nth-child(6) {
+        //   transform: translate(131px, 5px) rotate(-22deg);
+        // }
+      }
+      .second-top-container {
+        bottom: 165px;
+        div#secondTop-0 {
+          margin-left: 82px;
+        }
+        // div#secondTop-1 {
+        //   transform: translate(-7px, 42px) rotate(10.952deg);
+        // }
+        div#secondTop-2 {
+          margin-left: 192px;
+        }
+      }
+      .top-container {
+        bottom: 227px;
+        div#top-0 {
+          margin-left: 110px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1600px) and (max-width: 2500px) {
+  .skills-tab {
+    .skills {
+      padding: 0 10%;
+      height: 400px;
+    }
+  }
+}
+@media (min-width: 200px) and (max-width: 690px) {
+  .skills-tab {
+    padding: 65px 40px;
+    .skill-info {
+      width: 100%;
+    }
+    .flex-container {
+      display: block;
+    }
+    .skills {
+      height: fit-content;
+      padding: 10px;
+      width: 100%;
+      .icon {
+        width: 110px;
+        height: 110px;
+      }
+      .bottom-container {
+        position: relative;
+        bottom: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        height: fit-content;
+
+        > div {
+          margin: 7px 3px !important;
+        }
+      }
+    }
+  }
+}

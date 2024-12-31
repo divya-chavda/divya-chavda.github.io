@@ -1,0 +1,99 @@
+.client-feedback-container {
+  position: relative;
+  padding: 50px 120px;
+  background: #000;
+
+  .bg-client {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 0;
+  }
+  .skill-info {
+    z-index: 1;
+    position: relative;
+    .section-title {
+      margin: 20px 0;
+    }
+    .client-container {
+      overflow-x: scroll;
+      scrollbar-width: none;
+      position: relative;
+      .scrollable {
+        display: flex;
+        margin: 20px 0;
+        width: -moz-fit-content;
+        width: fit-content;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item-container {
+          width: 45%;
+          margin: 40px 10px;
+          font-family: Outfit;
+          line-height: 28px;
+          position: relative;
+          z-index: 1;
+          padding: 0 20px;
+          border-bottom: 1px solid #ffffff2e;
+          .bg-client {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+          }
+          .flex {
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+          }
+          .desc {
+            color: #fff;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 140%;
+            margin: 25px 0;
+            min-height: 200px;
+            z-index: 1;
+            position: relative;
+          }
+          .details {
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            span {
+              font-weight: 100;
+            }
+          }
+        }
+        .item-container.active {
+          // background: linear-gradient(
+          //   180deg,
+          //   rgb(34 34 34) 0%,
+          //   rgb(42 104 205) 27%,
+          //   rgb(71 178 255) 73%
+          // );
+          background: linear-gradient(180deg, #304f63 0%, #043857 107.69%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 690px) {
+  .client-feedback-container {
+    padding: 30px;
+    .skill-info {
+      .client-container {
+        .scrollable {
+          .item-container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

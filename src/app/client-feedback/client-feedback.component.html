@@ -1,0 +1,24 @@
+<section class="client-feedback-container">
+
+    <div class="skill-info">
+
+        <h3 class="title section-title">Client & Colleague Feedback</h3>
+
+        <div class="client-container">
+            <div class="scrollable">
+                <div *ngFor="let item of recommendations, let i = index" class="item-container">
+                    <div class="bg-client">
+
+                        <app-icon-svg [iconName]="'client_comment'"></app-icon-svg>
+                    </div>
+                    <div class="flex">
+                        <div class="feedback desc" [innerHTML]="item.content"></div>
+                        <div class="details name">
+                            {{item.name}} &nbsp;<span>| &nbsp;{{item.role}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
