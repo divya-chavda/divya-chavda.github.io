@@ -5,7 +5,6 @@
 /integration/bazel/bazel-*
 *.log
 node_modules/
-.angular
 modules/ssr-benchmarks/node_modules/
 
 # Include when developing application packages.
