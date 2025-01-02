@@ -25,7 +25,7 @@ export class ClientFeedbackComponent {
       id: 1,
       role: "Co-Founder at Spreadd",
       content:
-        "I’ve had the pleasure of knowing Divya for over a year now, during which we collaborated on several projects. Above all, I was impressed with Divya’s ability to adapt to change and learn new things at significantly good speed. And, of course, her love for pani-pur cannot be neglected. Divya would be a true asset for any positions requiring senior oversight or a tech lead and comes with my heartfelt recommendation.",
+        "One of the bubbly girls in the team adrixus. she holds good speed and confidence. started working with her before almost a year and the way she is modding herself with coding improvement, understanding, and execution are great. She is never afraid to work on anything when it comes to Angular and Node. apart from work she makes the environment cheerful and works freely making sure her and team’s time is not affecting the work. Always open to learning and she makes friends wherever she goes !! ",
     },
     {
       name: "Macnath Ravichandran ",
