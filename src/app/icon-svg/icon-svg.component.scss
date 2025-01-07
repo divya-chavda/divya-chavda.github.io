@@ -1,7 +1,7 @@
 svg.skill-icon {
   background: transparent;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 90px;
   background-position: center;
   align-items: center;
 }
@@ -28,12 +28,5 @@ svg.skill-icon {
   svg.skill-icon {
     width: 40px;
     height: 40px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1900px) {
-  svg.skill-icon {
-    width: 50px;
-    height: 50px;
   }
 }

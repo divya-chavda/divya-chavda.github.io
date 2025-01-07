@@ -14,7 +14,7 @@
     box-shadow: 0 6px 24px rgb(0 0 0 / 20%);
     border-radius: 50%;
     padding: 25px;
-    margin: 15px 15px 40px;
+    margin: 15px 15px 50px;
   }
   .skill-item .java-svg {
     width: 100px;
@@ -22,8 +22,9 @@
   }
   .skill-item .skill-label {
     text-align: center;
-    margin-top: 25px;
-    font-weight: 600;
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 18px;
   }
 
   @media only screen and (max-width: 600px) {

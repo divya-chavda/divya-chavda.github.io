@@ -46,6 +46,7 @@
             display: flex;
             justify-content: space-between;
             height: 100%;
+            align-items: flex-start;
           }
           .desc {
             color: #fff;
@@ -62,9 +63,17 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 28px;
+            position: relative;
             span {
               font-weight: 100;
             }
+          }
+          .details.name::before {
+            border: 1px solid #81ff1f;
+            content: "";
+            height: 115%;
+            left: -20px;
+            position: absolute;
           }
         }
         .item-container.active {
