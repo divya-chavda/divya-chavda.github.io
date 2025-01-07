@@ -1,14 +1,14 @@
 <section class="intro">
 
-  <!-- <div class="intro-overlay"></div> -->
+  <div class="intro-overlay"></div>
   <header>
     <div class="section-menu">
       <div class="logo-bar">
         <a class="logo" href="index.html"> </a>
       </div>
-      <a class="link" href="https://www.linkedin.com/in/divya-chavda-2b1616120/" target="_blank" *ngIf="!isMobile">
-        Divya Chavda&nbsp;
-        <app-icon-svg [iconName]="'link_arrow'"></app-icon-svg>
+      <a class="contact-btn bg-green text-black" href="mailto:divyachavda30@gmail.com" target="_blank"
+        *ngIf="!isMobile">
+        Contact Me&nbsp;
       </a>
       <div class="menu" *ngIf="isMobile" (click)="onChangeMenu()">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -22,26 +22,26 @@
 
   <div class="intro-container">
     <div class="intro-content">
-      <div class="col-twelve baner-text">
-        <h2 class="title">Hi, I’m Divya,</h2> <br />
+      <div class="heading-titles">
+        <div class="text-style1 flex">
+          <div class="green-bullet"></div>
+          Currently working as a Senior software developer in Citi Corp.
+        </div>
+        <div class="col-twelve baner-text">
+          <h2 class="title">Hi, I’m Divya</h2>
+          <div class="profile-img"></div>
+        </div>
         <h3 class="sub-title">A Full stack Developer</h3>
-        <p class="text-style">
-          A full stack developer transforming complex challenges into scalable software solutions, empowering businesses
-          to innovate, grow, and succeed.
-        </p>
-
       </div>
 
 
       <ng-container [ngTemplateOutlet]="socialTemplate" *ngIf="!isMobile">
       </ng-container>
     </div>
-    <div class="text-style1">
-      Currently working as a Senior software developer in Citi Bank at Pune, Maharashtra
-    </div>
+
     <ng-container [ngTemplateOutlet]="socialTemplate" *ngIf="isMobile"></ng-container>
-    <div class="banner-image">
-      <img src="/assets/banner.png" />
+    <div class="scroll-btn" (click)="scrollToNextTab()">
+      <app-icon-svg [iconName]="'scroll_down'"></app-icon-svg>
     </div>
   </div>
 

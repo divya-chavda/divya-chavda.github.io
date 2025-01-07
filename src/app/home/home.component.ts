@@ -85,47 +85,7 @@ export class HomeComponent {
       desc: "Used jQuery for dynamic content and AJAX in early projects. Enhanced user interactions and improved functionality by leveraging plugins for responsive web applications.",
     },
   ];
-  lengths = {
-    skills: 9,
-    midSkills: 6,
-    secondTopSkills: 3,
-    topSkill: 1,
-  };
-  skills: { skillName: any; desc: any }[] = [];
-  midSkills: { skillName: any; desc: any }[] = [];
-  secondTopSkills: { skillName: any; desc: any }[] = [];
-  topSkill: { skillName: any; desc: any }[] = [];
-  isMobile = false;
-  activeSkill: { skillName: any; desc: any } | undefined;
-  ngOnInit() {
-    if (window.screen.availWidth < 690) {
-      this.isMobile = true;
-    }
 
-    const shuffledSkills = [...this.combinedSkills].sort(
-      () => Math.random() - 0.5
-    );
-    this.activeSkill = shuffledSkills.filter(
-      (e) => e.skillName.toLowerCase() === "java"
-    )[0];
-    if (!this.isMobile) {
-      this.skills = shuffledSkills.splice(0, this.lengths.skills);
-      this.midSkills = shuffledSkills.splice(0, this.lengths.midSkills);
-      this.secondTopSkills = shuffledSkills.splice(
-        0,
-        this.lengths.secondTopSkills
-      );
-      this.topSkill = shuffledSkills.splice(0, this.lengths.topSkill);
-
-      console.log(this.activeSkill);
-    } else {
-      this.skills = shuffledSkills;
-    }
-  }
-  onChangeActiveTech(item: { skillName: any; desc: any }) {
-    this.activeSkill = item;
-    console.log(this.activeSkill);
-  }
   getSkill(logoName: String) {
     return logoName.toLowerCase().replace(".", "") + "_skill";
   }

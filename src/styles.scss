@@ -36,8 +36,6 @@
  */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@200&display=swap");
-// @import "font-awesome";
 /** 
   * ===================================================================
   * 02. base style overrides - (_document-setup.scss)
@@ -45,8 +43,11 @@
   * ------------------------------------------------------------------- 
   */
 
-html {
+html,
+body {
   font-size: 10px;
+  max-width: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -72,21 +73,60 @@ body,
 app-root {
   height: 100%;
   width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Outfit, "sans-serif";
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+
   font-weight: 100;
   color: #cbcbcb;
 }
 
 body {
   background: #070707;
-  font-family: "lora-regular", serif;
-  font-size: 1.7rem;
-  line-height: 3rem;
-  color: #6e6e6e;
+  font-family: "Outfit", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  // letter-spacing: -0.6px;
+  color: #fff;
 }
 
+.text-green {
+  color: #82ff1f;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-green {
+  background-color: #82ff1f;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.green-bullet {
+  position: relative;
+  margin-right: 10px;
+  border: 6px solid #81ff1f;
+  border-radius: 50%;
+}
 /**
   * links - (_document-setup.scss)
   * -------------------------------------------------------------------
@@ -128,8 +168,7 @@ h6,
 .h04,
 .h05,
 .h06 {
-  font-family: Outfit, "sans-serif";
-  color: #cbcbcb;
+  font-family: "Outfit", serif;
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin-bottom: 2.1rem;
@@ -146,7 +185,7 @@ h5,
 .h05,
 h6,
 .h06 {
-  font-family: Outfit, "sans-serif";
+  font-family: "Outfit", serif;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
@@ -158,10 +197,21 @@ h1,
   letter-spacing: -0.1rem;
 }
 .title {
-  color: #fff;
-  font-family: Outfit, "sans-serif";
-  font-size: 32px;
-  font-weight: 500;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 34px;
+  font-style: normal;
+  line-height: 74px;
+}
+.sub-title {
+  font-family: "Outfit", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+  letter-spacing: -0.72px;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 .section-title {
   margin: 50px 0;
@@ -446,7 +496,7 @@ td {
 
 th {
   color: #313131;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", serif;
 }
 
 td {
@@ -669,7 +719,7 @@ select {
   outline: none;
   vertical-align: middle;
   color: #313131;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", serif;
 
   font-size: 1.5rem;
   line-height: 3rem;

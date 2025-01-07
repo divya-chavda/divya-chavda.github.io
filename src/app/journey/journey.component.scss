@@ -1,161 +1,46 @@
 .journey-parent {
   padding: 20px 95px;
-  background: linear-gradient(#8f8f8fba, #0a0a0a);
-  // background-image: url(/assets/footer-old.jpg);
-  height: auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: auto;
-  .section-title {
-    // color: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  .sub-title {
+    color: rgba(255, 255, 255, 0.5);
   }
-  .journey_container {
-    position: relative;
-    height: 850px;
-    .journey-item {
-      position: absolute;
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 20px;
-      font-weight: 300;
-      height: 330px;
-      cursor: pointer;
-      box-shadow: rgb(182 182 182 / 35%) 0px 5px 15px;
-      border: 1px solid #000;
-      .logo-container {
-        display: flex;
+  .journey-item {
+    border-radius: 40px;
+    border: 1px solid rgb(255 255 255 / 31%);
+    margin: 30px 0;
+    padding: 20px;
+    .logo-container {
+      display: flex;
+      width: 100%;
+      .details {
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 15px;
-        .logo img {
-          width: 60px;
-          height: 60px;
-          border-radius: 20px;
-        }
-        .details {
-          margin: 0 20px;
-          font-weight: 400;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          color: #fff;
-          .inner-details {
-            font-size: 16px;
-            font-weight: 100;
-            line-height: 30px;
-            letter-spacing: 1.8px;
-          }
-        }
+        padding: 0 15px;
       }
+      .inner-details {
+        color: rgba(255, 255, 255, 0.6);
+        text-align: right;
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+      }
+    }
 
-      .title {
-        margin-bottom: 0.9rem;
-        font-size: 28px;
-        font-weight: 300;
-        line-height: 120%;
-      }
-      .responsiblity {
-        font-size: 18px;
-      }
+    .role {
+      font-size: 28px;
+      line-height: 50px;
     }
-    .journey-item.item-0 {
-      background: #3d3d3d;
-      z-index: 5;
-      top: 360px;
-    }
-    .journey-item.item-0.active {
-      top: 560px;
-    }
-    .journey-item.item-1 {
-      background: #292929;
-      z-index: 4;
-      top: 270px;
-    }
-    .journey-item.item-1.active {
-      top: 495px;
-    }
-    .journey-item.item-2 {
-      background: #1f1f1f;
-      z-index: 3;
-      top: 180px;
-    }
-    .journey-item.item-2.active {
-      top: 405px;
-    }
-    .journey-item.item-3 {
-      background: #1f1f1f;
-      z-index: 2;
-      top: 90px;
-    }
-    .journey-item.item-3.active {
-      top: 315px;
-    }
-    .journey-item.item-4 {
-      background: #0a0a0a;
-      z-index: 1;
-    }
-    .journey-item {
-      transition: all 1s;
-    }
-  }
-}
-@media (min-width: 200px) and (max-width: 690px) {
-  .journey-parent {
-    padding: 30px;
-    .journey_container {
-      height: 1200px;
-      .journey-item {
-        height: 550px;
-        .logo-container {
-          .logo {
-            img {
-              width: 45px;
-              height: 45px;
-            }
-          }
-          .details {
-            display: block;
-          }
-        }
-        .title {
-          font-size: 20px;
-        }
-        .responsiblity {
-          line-height: 18px;
-        }
-      }
-      .journey-item.item-0 {
-        top: 440px;
-      }
-      .journey-item.item-1 {
-        top: 330px;
-      }
-      .journey-item.item-2 {
-        top: 220px;
-      }
-      .journey-item.item-3 {
-        top: 110px;
-      }
-      .journey-item.item-0.active {
-        top: 850px;
-      }
-      .journey-item.item-1.active {
-        top: 710px;
-      }
-      .journey-item.item-2.active {
-        top: 600px;
-      }
-      .journey-item.item-3.active {
-        top: 500px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 2500px) {
-  .journey-parent {
-    .journey_container {
-      height: 900px;
+    .responsiblity {
+      color: #b5b5b5;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin-top: 15px;
+      margin-bottom: 50px;
     }
   }
 }

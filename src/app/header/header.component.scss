@@ -1,5 +1,6 @@
 header {
   position: relative;
+  max-width: 100%;
   width: 100%;
   min-height: 66px;
   z-index: 600;
@@ -26,13 +27,15 @@ header {
         transform: translate(-50%, -50%);
       }
     }
-    .link {
-      cursor: pointer;
-      font-weight: 400;
-      letter-spacing: 2px;
-      font-size: 19px;
-      color: #fff;
+    .contact-btn {
+      border-radius: 30px;
+      height: 48px;
+      padding: 17px 24px;
       text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
     }
   }
 }
@@ -95,11 +98,11 @@ header {
   position: relative;
   text-align: center;
   background: linear-gradient(rgb(0 0 0 / 87%), rgb(0 0 0)), url(/assets/bg.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: center;
   .intro-container {
-    padding: 50px 140px;
+    padding: 20px 140px;
     .intro-content {
       display: flex;
       align-items: center;
@@ -107,26 +110,50 @@ header {
       transform: translateY(-2.1rem);
       position: relative;
       color: white;
-      .baner-text {
+      .heading-titles {
+        width: 90%;
         text-align: left;
-        h2.title {
-          margin-top: 12px;
+        .baner-text {
+          text-align: left;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          h2.title {
+            margin-top: 12px;
+          }
+
+          .text-style {
+            font-size: 22px;
+            font-weight: 150;
+            width: 80%;
+            margin-bottom: 50px;
+          }
         }
-        h2,
-        h3 {
-          color: transparent;
-          font-size: 4.2rem;
-          font-weight: 400;
-          background: linear-gradient(180deg, #fff 0%, #eaa296 107.69%);
-          background-clip: text;
-          line-height: 90%;
-        }
-        .text-style {
-          font-size: 22px;
-          font-weight: 150;
-          width: 80%;
-          margin-bottom: 50px;
-        }
+      }
+      .sub-title {
+        margin-top: 15px;
+      }
+      h2,
+      h3 {
+        color: transparent;
+        font-size: 6.2rem;
+        font-weight: 400;
+        background: linear-gradient(180deg, #fff 0%, #82ff1f85 107.69%);
+        background-clip: text;
+        line-height: 90%;
+      }
+      .profile-img {
+        width: 191px;
+        height: 92px;
+        border-radius: 100px;
+        border: 2px solid #fff;
+        background: url(/assets/profile-pic.jpg);
+        background-color: #739ea8;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin-left: 10px;
       }
     }
     .text-style1 {
@@ -136,6 +163,9 @@ header {
       width: 80%;
       margin-bottom: 50px;
       color: #fff;
+    }
+    .scroll-btn {
+      cursor: pointer;
     }
   }
 }
@@ -160,28 +190,36 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 20px 0 !important;
     padding: 0;
   }
   .intro {
     min-height: 125vh;
     .intro-container {
-      padding: 65px 40px;
+      padding: 65px 30px;
       .intro-content {
         display: block;
-        .baner-text {
-          h2.title {
-            font-size: 3.5rem;
+        margin: 35px 0;
+        .heading-titles {
+          .baner-text {
+            display: block;
+            h2.title {
+              font-size: 3rem;
+            }
           }
-          h3 {
-            font-size: 3rem;
-          }
+        }
+        .profile-img {
+          width: 125px;
+          height: 60px;
+        }
+        .sub-title {
+          font-size: 2.8rem;
         }
       }
       .text-style,
       .text-style1 {
         width: 100%;
-        font-size: 22px !important;
+        font-size: 18px !important;
       }
     }
     .banner-image {

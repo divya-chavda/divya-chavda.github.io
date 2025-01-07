@@ -7,7 +7,4 @@ import { Component, Input } from "@angular/core";
 })
 export class IconSvgComponent {
   @Input() iconName: String = "";
-  ngOnInit() {
-    console.log(this.iconName);
-  }
 }

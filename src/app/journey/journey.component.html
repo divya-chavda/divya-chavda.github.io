@@ -1,23 +1,30 @@
-<div class="journey-parent">
-    <div class="row title section-title">
+<div class="journey-parent text-white" id="journeyId">
+    <div class="sub-title  flex">
+        <div class="green-bullet"></div>Experience
+    </div>
+    <div class="row title ">
         Professional Journey
     </div>
     <div class="journey_container">
-        <div class="journey-item" *ngFor="let item of journeys; let i = index"
-            [ngClass]="item.active ? 'active item-'+i : 'item-'+i" (click)="onExpChange(i)">
+        <div class="journey-item" *ngFor="let item of journeys; let i = index">
             <div class="logo-container">
                 <div class="logo">
-                    <img [src]="'/assets/' + item.logo" />
+                    <app-icon-svg [iconName]="item.logo"></app-icon-svg>
                 </div>
-                <div class="details">
-                    <h3 class="title">{{item.companyName}}</h3>
+                <div class="details flex">
+                    <h3 class="title">
+                        <span class="text-green">&#123;</span>
+                        {{item.companyName}}
+                        <span class="text-green">&#125;</span>
+
+                    </h3>
                     <div class="inner-details">
                         {{item.startDate}} - {{item.endDate}} <br />
                         {{ item.location}}
                     </div>
                 </div>
             </div>
-            <h3 class="title">{{item.role}}</h3>
+            <h3 class="title role">{{item.role}}</h3>
             <div class="responsiblity" [innerHTML]="item.jobResp"></div>
         </div>
     </div>

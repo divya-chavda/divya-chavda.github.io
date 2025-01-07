@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, QueryList, ViewChildren } from "@angular/core";
 
 @Component({
   selector: "app-header",
@@ -43,5 +43,14 @@ export class HeaderComponent {
   }
   onChangeMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  private nextTabID = "aboutSectionId";
+
+  scrollToNextTab() {
+    const ele = document["getElementById"](this.nextTabID);
+    console.log(ele);
+    if (ele) {
+      ele.scrollIntoView({ behavior: "smooth" });
+    }
   }
 }

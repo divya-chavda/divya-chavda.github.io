@@ -1,44 +1,19 @@
 <section class="skills-tab">
-    <div class="row title section-title">
-        Technical Toolkit
+    <div class="sub-title flex">
+        <div class="green-bullet"></div>Tools & Skills
     </div>
-    <div class="flex-container">
-        <div class="skill-info" *ngIf="activeSkill != null">
-            <h3>{{activeSkill.skillName}}</h3>
-            <p>{{activeSkill.desc}}</p>
-        </div>
-        <div class="row skills ">
-            <div class="top-container" *ngIf="!isMobile">
-                <div class="skill-item icon animated-element" *ngFor="let item of topSkill, let i = index"
-                    [id]="'top-'+i" (click)="onChangeActiveTech(item)">
-                    <app-icon-svg [iconName]="getSkill(item.skillName)"></app-icon-svg>
+    <div class="row title ">
+        My Skillset and Creation
+    </div>
+    <div class="row">
+        <div class="col-twelve " id='stage'>
+            <ul class="skill-parent shape  ring backfaces">
+                <div class="skill-item plane" *ngFor="let item of combinedSkills">
+                    <!-- https://icons8.com/icons/set/spring-boot -->
+                    <app-icon-svg class="flower-icon" [iconName]="getSkill(item.skillName)"></app-icon-svg>
+                    <div class="skill-label">{{item.skillName}}</div>
                 </div>
-
-            </div>
-            <div class="second-top-container" *ngIf="!isMobile">
-                <div class="skill-item icon animated-element" *ngFor="let item of secondTopSkills, let i = index"
-                    [id]="'secondTop-'+i" (click)="onChangeActiveTech(item)">
-                    <app-icon-svg [iconName]="getSkill(item.skillName)"></app-icon-svg>
-                </div>
-
-            </div>
-            <div class="middle-container" *ngIf="!isMobile">
-                <div class="skill-item icon animated-element" *ngFor="let item of midSkills, let i = index"
-                    [id]="'middle-'+i" (click)="onChangeActiveTech(item)">
-                    <app-icon-svg [iconName]="getSkill(item.skillName)"></app-icon-svg>
-                </div>
-
-            </div>
-
-            <div class="bottom-container">
-                <div class="skill-item icon animated-element" *ngFor="let item of skills, let i = index"
-                    [id]="'bottom-'+i" (click)="onChangeActiveTech(item)">
-                    <app-icon-svg [iconName]="getSkill(item.skillName)"></app-icon-svg>
-                </div>
-
-            </div>
-
-
+            </ul>
         </div>
     </div>
 </section>

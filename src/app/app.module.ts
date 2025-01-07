@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconSvgComponent } from './icon-svg/icon-svg.component';
 import { ClientFeedbackComponent } from './client-feedback/client-feedback.component';
 import { JourneyComponent } from './journey/journey.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { JourneyComponent } from './journey/journey.component';
     FooterComponent,
     IconSvgComponent,
     ClientFeedbackComponent,
-    JourneyComponent
+    JourneyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
