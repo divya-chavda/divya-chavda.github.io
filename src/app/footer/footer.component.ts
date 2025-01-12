@@ -8,29 +8,22 @@ import { Component } from "@angular/core";
 export class FooterComponent {
   socialLinks = [
     {
+      name: "Linkedin",
       logo: "fa fa-linkedin",
       link: "https://www.linkedin.com/in/divya-chavda-2b1616120/",
       isSvg: false,
     },
     {
+      name: "X",
       logo: "social_x",
       link: "https://twitter.com/ms_sensational_",
       isSvg: true,
     },
     {
-      logo: "fa fa-instagram",
-      link: "https://www.instagram.com/ms_divyachavda/",
-      isSvg: false,
-    },
-    {
+      name: "Github",
       logo: "fa fa-github",
       link: "https://github.com/divya-chavda",
       isSvg: false,
-    },
-    {
-      logo: "social_google",
-      link: "mailto:divyachavda30@gmail.com",
-      isSvg: true,
     },
   ];
 }

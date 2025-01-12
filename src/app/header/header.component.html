@@ -6,13 +6,9 @@
       <div class="logo-bar">
         <a class="logo" href="index.html"> </a>
       </div>
-      <a class="contact-btn bg-green text-black" href="mailto:divyachavda30@gmail.com" target="_blank"
-        *ngIf="!isMobile">
+      <a class="contact-btn bg-green text-black" href="mailto:divyachavda30@gmail.com" target="_blank">
         Contact Me&nbsp;
       </a>
-      <div class="menu" *ngIf="isMobile" (click)="onChangeMenu()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
     </div>
 
     <div class="open-menu" *ngIf="isMobile && isMenuOpen">

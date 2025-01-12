@@ -50,7 +50,7 @@
           }
           .desc {
             color: #fff;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 200;
             line-height: 140%;
             margin: 25px 0;
@@ -60,7 +60,7 @@
           }
           .details {
             margin: 20px 0;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 500;
             line-height: 28px;
             position: relative;
@@ -88,6 +88,15 @@
       }
     }
   }
+  .flower-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    ::ng-deep svg {
+      width: 500px;
+      height: 400px;
+    }
+  }
 }
 
 @media (min-width: 200px) and (max-width: 690px) {
@@ -98,6 +107,41 @@
         .scrollable {
           .item-container {
             width: 100%;
+            padding: 0;
+            margin: 20px 10px;
+            .details {
+              margin: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2500px) {
+  .client-feedback-container {
+    .skill-info {
+      .client-container {
+        .scrollable {
+          .item-container {
+            margin: 55px 10px;
+            .desc {
+              font-size: 26px;
+              margin: 50px 0;
+            }
+            .details {
+              margin: 40px 0;
+              font-size: 26px;
+            }
+            .details.name::before {
+              border: 2px solid #81ff1f;
+              content: "";
+              height: 200%;
+              left: -20px;
+              position: absolute;
+              top: -40%;
+            }
           }
         }
       }

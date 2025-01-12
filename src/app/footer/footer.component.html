@@ -1,13 +1,18 @@
 <footer class="footer-container">
-  <p>Let’s <br />Connect.</p>
-
-  <ul class="intro-social">
-    <li *ngFor="let item of socialLinks">
-      <a [href]="item.link" target="_blank">
-        <i [class]="item.logo" *ngIf="!item.isSvg"></i>
-        <app-icon-svg [iconName]="item.logo" *ngIf="item.isSvg"></app-icon-svg>
-      </a>
-    </li>
-  </ul>
-  <p class="copyright">@DivyaChavda_2025</p>
+  <div class="part-one">
+    <h1>Interested in <br />working together?</h1>
+    <p>Let's connect</p>
+    <a class="email-id" href="mailto:divyachavda30@gmail.com">divyachavda30@gmail.com</a>
+  </div>
+  <div class="part-two">
+    <ul class="footer-links">
+      <li *ngFor="let item of socialLinks">
+        <a [href]="item.link" target="_blank">
+          <app-icon-svg [iconName]="'green_arrow'"></app-icon-svg>
+          {{item.name}}
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">@DivyaChavda_2025</p>
+  </div>
 </footer>

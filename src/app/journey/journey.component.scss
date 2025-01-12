@@ -31,16 +31,73 @@
     }
 
     .role {
-      font-size: 28px;
+      font-size: 26px;
       line-height: 50px;
     }
     .responsiblity {
       color: #b5b5b5;
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 1px;
       line-height: 30px;
       margin-top: 15px;
       margin-bottom: 50px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 690px) {
+  .journey-parent {
+    padding: 20px 30px;
+    .journey-item {
+      text-align: center;
+      .role {
+        font-size: 22px;
+      }
+      .logo-container {
+        display: block;
+        text-align: center;
+        .details {
+          display: block;
+          text-align: center;
+          .title {
+            margin: 0;
+            font-size: 22px;
+          }
+        }
+        .inner-details {
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2500px) {
+  .journey-parent {
+    .journey-item {
+      .logo-container {
+        .logo {
+          ::ng-deep svg {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        .inner-details {
+          font-size: 26px;
+          line-height: 45px;
+        }
+      }
+      .role {
+        margin: 24px 0;
+        font-size: 32px;
+      }
+      .responsiblity {
+        font-size: 26px;
+        letter-spacing: 2px;
+        line-height: 36px;
+      }
     }
   }
 }
