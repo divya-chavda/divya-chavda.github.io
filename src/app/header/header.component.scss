@@ -109,12 +109,13 @@ header {
         height: 92px;
         border-radius: 100px;
         border: 2px solid #fff;
-        background: url(/assets/profile-pic.jpg);
-        background-color: #739ea8;
-        background-size: 75%;
+        background: url(/assets/div_profile.jpg);
+        background-color: #333233;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center -100px;
         margin-left: 10px;
+        // filter: grayscale(0.7);
       }
     }
     .text-style1 {
@@ -178,6 +179,7 @@ header {
         .profile-img {
           width: 135px;
           height: 70px;
+          background-position: center -65px;
         }
         .sub-title {
           font-size: 3rem;
