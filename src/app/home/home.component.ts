@@ -8,6 +8,22 @@ import { Component, HostListener } from "@angular/core";
 export class HomeComponent {
   combinedSkills = [
     {
+      skillName: "Python",
+      desc: "Experience building scalable backend services and AI/GenAI solutions using Python. Proficient in writing efficient, clean code for data-driven and enterprise applications.",
+    },
+    {
+      skillName: "FastAPI",
+      desc: "Developed high-performance APIs using FastAPI for AI-driven applications. Focused on speed, scalability, and seamless integration with front-end systems.",
+    },
+    {
+      skillName: "React",
+      desc: "Experience building modern, responsive user interfaces using React. Developed intuitive front-end solutions for data-intensive and AI-powered applications.",
+    },
+    {
+      skillName: "PostgreSQL",
+      desc: "Hands-on experience with PostgreSQL for designing scalable relational databases. Skilled in query optimization and handling structured data efficiently.",
+    },
+    {
       skillName: "Java",
       desc: "Over 6.5 years of experience developing scalable enterprise applications. Expertise in designing robust back-end systems, microservices, and REST APIs, ensuring seamless integrations and efficient data handling in diverse projects.",
     },
@@ -30,6 +46,15 @@ export class HomeComponent {
     {
       skillName: "OpenShift",
       desc: "Deployed and managed microservices in OpenShift, ensuring scalable, reliable, and containerized solutions for cloud-native applications. Optimized deployments to streamline resource usage.",
+    },
+
+    {
+      skillName: "Docker",
+      desc: "Containerized applications using Docker to ensure consistent environments and smooth deployment across development and production.",
+    },
+    {
+      skillName: "Kubernetes",
+      desc: "Deployed and managed containerized applications using Kubernetes, ensuring scalability, resilience, and efficient resource utilization.",
     },
     {
       skillName: "Node.js",
