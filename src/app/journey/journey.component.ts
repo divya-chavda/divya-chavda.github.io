@@ -10,10 +10,24 @@ export class JourneyComponent {
     {
       id: "first",
       companyName: "Citi Corp.",
+      role: "Assistant Vice Precident",
+      logo: "citi_logo",
+      startDate: "Aug 2025",
+      endDate: "Present",
+      active: false,
+      jobResp: `
+        As an Assistant Vice President (AVP) at Citi Bank, I contribute to AI/GenAI-driven solutions within the Foreign Exchange domain, building scalable and data-driven applications. Proficient in Python, React, FastAPI, Microservices, PostgreSQL, OpenShift, Docker, and Kubernetes, I design and develop intelligent systems that enhance automation and decision-making.
+        <br/> <br/>My focus on scalable architecture, high-performance APIs, and optimized data handling ensures reliable and efficient solutions. Active collaboration with cross-functional teams and participation in Agile practices enable the timely delivery of secure, high-impact applications.
+      `,
+      location: "Pune, Maharashtra, India",
+    },
+    {
+      id: "first",
+      companyName: "Citi Corp.",
       role: "Apps Dev Intermed Prgmr Anlyst (SDE-2)",
       logo: "citi_logo",
       startDate: "Aug 2023",
-      endDate: "Present",
+      endDate: "Aug 2025",
       active: false,
       jobResp: `
         As a Senior Software Developer at Citi Bank's research team with 6.5+ years of expertise, I contribute to a critical email service application. Proficient in Java, Spring Boot, Microservices, OpenShift, Docker, and Kubernetes, I enhanced communication and delivery by integrating Kafka and upgrading Java and Spring Boot.
